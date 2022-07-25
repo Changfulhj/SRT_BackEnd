@@ -1,7 +1,7 @@
-create database virtual_museum
+create database virtual_museum;
 
 create table users
-(
+(s
     id       int auto_increment
         primary key,
     username varchar(255) not null,
@@ -9,5 +9,3 @@ create table users
     constraint users_id_uindex
         unique (id)
 );
-
-INSERT INTO virtual_museum.users (id, username, password) VALUES (1, '小老王', '$2a$10$UNbGXYiU78MJd4ksmwNnn.nT4Jl7DenmObHU2FWxnA78jbCaRid36');
